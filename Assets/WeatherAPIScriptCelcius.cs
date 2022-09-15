@@ -3,7 +3,7 @@ using UnityEngine.Networking;
 using System.Collections;
 using TMPro;
 
-public class WeatherAPIScript : MonoBehaviour
+public class WeatherAPIScriptCelcius : MonoBehaviour
 {
     public GameObject weatherTextObject;
         // add your personal API key after APPID= and before &units=
