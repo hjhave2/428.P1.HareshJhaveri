@@ -60,7 +60,7 @@ public class WorldTimeAPI : MonoBehaviour
                 string time = hour.ToString() + ":" + minute + am_or_pm;
                 
                 timeTextObject.GetComponent<TextMeshPro>().text = "" ;
-                Debug.Log(time);
+                //Debug.Log(time);
             }
         }
     }

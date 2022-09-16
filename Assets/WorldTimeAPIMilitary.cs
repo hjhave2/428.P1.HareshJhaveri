@@ -51,7 +51,7 @@ public class WorldTimeAPIMilitary : MonoBehaviour
                 string time = hour.ToString() + ":" + minute;
                 
                 timeTextObject.GetComponent<TextMeshPro>().text = "" ;
-                Debug.Log(time);
+                //Debug.Log(time);
             }
         }
     }
