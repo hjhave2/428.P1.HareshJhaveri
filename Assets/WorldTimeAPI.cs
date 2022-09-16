@@ -9,7 +9,7 @@ using TMPro;
 public class WorldTimeAPI : MonoBehaviour
 {
     public GameObject timeTextObject;
-        string url = "https://worldtimeapi.org/timezone/America/Chicago";
+        string url = "https://worldtimeapi.org/api/timezone/America/Chicago";
 
     // Start is called before the first frame update
     void Start()
