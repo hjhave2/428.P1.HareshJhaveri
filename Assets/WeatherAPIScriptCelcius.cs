@@ -7,7 +7,7 @@ public class WeatherAPIScriptCelcius : MonoBehaviour
 {
     public GameObject weatherTextObject;
         // add your personal API key after APPID= and before &units=
-       string url = "http://api.openweathermap.org/data/2.5/weather?lat=33.39&lon=-104.5&APPID=91b9e3b928ac9eb9c4333a888ef017dd&units=imperial";
+       string url = "https://api.openweathermap.org/data/2.5/weather?lat=48.853&lon=2.349&APPID=91b9e3b928ac9eb9c4333a888ef017dd&units=metric";
 
    
     void Start()
@@ -55,7 +55,7 @@ public class WeatherAPIScriptCelcius : MonoBehaviour
                 string conditions = webRequest.downloadHandler.text.Substring(startConditions+7, (endConditions-startConditions-8));
                 //Debug.Log(conditions);
 
-                weatherTextObject.GetComponent<TextMeshPro>().text = "" + easyTempF.ToString() + "°F\n" + conditions;
+                weatherTextObject.GetComponent<TextMeshPro>().text = "" + easyTempF.ToString() + "°C\n" + conditions;
             }
         }
     }
