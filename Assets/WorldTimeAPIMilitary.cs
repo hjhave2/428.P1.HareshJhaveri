@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using TMPro;
 
-public class WorldTimeAPI : MonoBehaviour
+public class WorldTimeAPIMilitary : MonoBehaviour
 {
     public GameObject timeTextObject;
         string url = "https://worldtimeapi.org/api/timezone/America/Chicago";
@@ -46,18 +46,9 @@ public class WorldTimeAPI : MonoBehaviour
                 int endHourIndex = timeData.IndexOf(":", startHourIndex);
                 int endMinuteIndex = timeData.IndexOf(":", endHourIndex+1);
                 int hour = Int32.Parse(timeData.Substring(startHourIndex+1, (endHourIndex-startHourIndex-1)));
-                string am_or_pm = "am";
-                if(hour >= 12)
-                {
-                    am_or_pm = "pm";
-                    hour -= 12;
-                }
-                if(hour == 0)
-                {
-                    hour = 12;
-                }
+                
                 string minute = timeData.Substring(endHourIndex+1, (endMinuteIndex-endHourIndex-1));
-                string time = hour.ToString() + ":" + minute + am_or_pm;
+                string time = hour.ToString() + ":" + minute;
                 
                 timeTextObject.GetComponent<TextMeshPro>().text = "" ;
                 Debug.Log(time);
