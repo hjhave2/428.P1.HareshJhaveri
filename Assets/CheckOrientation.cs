@@ -10,6 +10,11 @@ public class CheckOrientation : MonoBehaviour
     public Light lightObject;
     bool isRotated = false;
 
+    void Start()
+    {
+        lightObject.enabled = true;
+    }
+
     void Update()
     {
         float x = cubeObject.transform.rotation.x;
