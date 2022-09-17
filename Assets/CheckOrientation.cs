@@ -14,7 +14,7 @@ public class CheckOrientation : MonoBehaviour
     {
         float x = cubeObject.transform.rotation.x;
         float z = cubeObject.transform.rotation.z;
-        if(!isRotated & ((Math.Abs(x) >= 145 & Math.Abs(x) <= 180) | (Math.Abs(z) >= 145 & Math.Abs(z) <= 180)))
+        if(!isRotated & ((((Math.Abs(x)%360) >= 150 & (Math.Abs(x)%360) <= 180) & (Math.Abs(z)%360) < 30) | (((Math.Abs(z)%360) >= 150 & (Math.Abs(z)%360) <= 180) & (Math.Abs(x)%360) < 30)))
         {
             isRotated = true;
             lightObject.enabled = !lightObject.enabled;
