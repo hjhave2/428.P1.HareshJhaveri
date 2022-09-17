@@ -15,7 +15,7 @@ public class WorldTimeAPI : MonoBehaviour
     void Start()
     {
         
-        InvokeRepeating("GetDataFromWeb", 2f, 60f);
+        InvokeRepeating("GetDataFromWeb", 2f, 1f);
     }
 
     void GetDataFromWeb()
@@ -59,7 +59,7 @@ public class WorldTimeAPI : MonoBehaviour
                 string minute = timeData.Substring(endHourIndex+1, (endMinuteIndex-endHourIndex-1));
                 string time = hour.ToString() + ":" + minute + am_or_pm;
                 
-                timeTextObject.GetComponent<TextMeshPro>().text = "" ;
+                timeTextObject.GetComponent<TextMeshPro>().text = "" + time;
                 //Debug.Log(time);
             }
         }
