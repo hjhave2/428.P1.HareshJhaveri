@@ -7,7 +7,7 @@
 # Before opening the project, you will need to register for a free Vuforia account at developer.vuforia.com, then download version 10.9 of vuforia sdk on developer.vuforia.com/ (If you can't find 10.9, version 10.10 will probably work)
 # Now, when you open the project, you will probably get some pop ups saying there are errors, click "continue" and in the second popup, hit "ignore", the project will open
 # For your project to be able to run, you will want to go to the assets tab, go to "Import Package" and click on "Custom Package". Now go to the file downloaded earlier and open it (give it permission to update).
-# Save, restart the project and there should be no more errors. Just make sure you go to the Scenes folder and open the scene in there to properly run the project.
+# Save, restart the project and there should be no more errors. Just make sure you go to the Scenes folder and open the scene in there to properly run the project. You may need to move around to get closer to the object since they are very small.
 # NOTE: The yacht will probably look black, I tried to set the textures to a material so that it rendered properly but I couldn't get it to work so don't worry about it
 # It should work just fine if you run it normally, but if you want it to run on an Android phone, go to File -> Build Settings
 # From there, click on Android and then click on the Switch Platform button.
